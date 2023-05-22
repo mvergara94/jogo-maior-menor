@@ -1,0 +1,53 @@
+/* Importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Bangers:wght@400;700&display=swap');
+@import url('header.css');
+@import url('main.css');
+@import url('footer.css');
+
+/* Definindo as variáveis de cores */
+:root {
+  --primary-font: 'Bangers', cursive;
+
+  --cor-destaque: #ef5b0c; /* Cor primária (destaque) */
+  --cor-secundaria: #d4f6cc; /* Cor secundária (texto e elementos de destaque) */
+  --cor-fundo: #003865; /* Cor de fundo */
+  --cor-realce: #3ccf4e; /* Cor de realce (botões e interações) */
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Estilização do jogo de adivinhação */
+body {
+  font-family: var(--primary-font);
+  background: rgb(0, 56, 101);
+  background: rgb(0, 56, 101);
+  background: rgb(0, 56, 101);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 56, 101, 1) 36%,
+    rgba(11, 115, 127, 1) 78%,
+    rgba(187, 224, 194, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--cor-secundaria);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+}
+
+a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+a:hover {
+  /* scale: 1.2; */
+  color: var(--cor-realce);
+}

@@ -1,0 +1,66 @@
+.conteudo-principal {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.conteudo-container h1,
+.conteudo-container h2 {
+  font-size: 4.5rem;
+}
+
+.conteudo-container h3 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.conteudo-container .mensagem {
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+
+.conteudo-container .mensagem .box {
+  border: 2px solid var(--cor-secundaria);
+  display: inline-block;
+  font-size: 3rem;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+}
+
+.conteudo-container .mensagem .dica {
+  letter-spacing: 0.5rem;
+}
+
+.botao-container {
+  background-color: var(--cor-secundaria); /* Defina a cor de fundo desejada */
+  display: inline-block;
+  padding: 0px;
+  margin-top: 20px;
+  border-radius: 0.5rem;
+}
+
+.btn-jogar {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 1px 1px var(--cor-realce);
+  border-radius: 0.5rem;
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  padding: 16px;
+  background-image: linear-gradient(
+    135deg,
+    rgba(0, 56, 101, 1) 36%,
+    rgba(11, 115, 127, 1) 78%,
+    rgba(187, 224, 194, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-jogar:active {
+  box-shadow: inset -1px 0px 1px 3px var(--cor-realce);
+}
